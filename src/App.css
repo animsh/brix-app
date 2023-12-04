@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,700&display=swap");
+
+:root {
+  /* Primary Colors */
+  --primary-1: #4a3aff;
+
+  /* Secondary Colors */
+  --secondary-1: #f3f1ff;
+
+  /* Neutrals */
+  --neutral-800: #170f49;
+  --neutral-700: #514f6e;
+  --neutral-600: #6f6c90;
+  --neutral-500: #a0a3bd;
+  --neutral-400: #d9dbe9;
+  --neutral-300: #eff0f6;
+  --neutral-200: #f7f7fb;
+  /* This seems to be a repeat of neutral-400, verify if it's correct */
+  --neutral-100: #ffffff;
+}
+
+* {
+  font-family: "DM Sans";
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  background-color: var(--primary-1);
+  color: var(--neutral-200);
+  border: none;
+  border-radius: 56px;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.btn-secondary {
+  padding: 12px 24px;
+  background-color: var(--neutral-100);
+  color: var(--primary-1);
+  border: none;
+  border-radius: 56px;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  border: solid 0.05rem;
+  border-color: var(--primary-1);
+  font-size: 0.8rem;
+}
+
+.style-guide-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.input-label {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.input {
+  padding: 16px 20px;
+  border: solid 0.05rem;
+  border-color: var(--neutral-300); 
+  border-radius: 56px;  
+  box-shadow: 0px 2px 6px #13124211;
+  display: flex;
+  align-items: center;
+  outline: none;
+  /* Center vertically */
+}
+
+.input-select {
+  padding: 16px 48px 16px 20px;
+}
+
+select {
+  background: url(./assets/company.svg) no-repeat right;
+  -webkit-appearance: none;
+  appearance: none;
+  background-position-x: 90%;
+  background-size: 12px;
+}
+
+option:hover {
+  background-color: #e0e0e0; /* Change this color to your desired hover color */
+}
+
+
+.input-false {
+  border: solid 0.1rem;
+  padding: 16px 20px; 
+  border-color: #D0342C;
+  border-radius: 56px;
+  box-shadow: 0px 2px 6px #13124211;
+  display: flex;  
+  align-items: center;
+  /* Center vertically */
+}
+
+.input-alert{
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0.4rem;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: #D0342C;
+}
+
+.inline-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.inline-button {
+  height: auto;
+  padding: 8px 16px;
+  text-align: center;
+  background-color: var(--primary-1);
+  color: var(--neutral-200);
+  border: none;
+  border-radius: 56px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.choice-item-false {
+  padding: 20px 20px;
+  border-radius: 16px;
+  display: flex;
+  box-shadow: 0px 2px 6px #13124211;
+  border: solid var(--neutral-300) 0.1rem;
+  align-items: center;
+}
+
+.choice-item-true {
+  padding: 20px 20px;
+  border: solid var(--primary-1) 0.1rem;
+  border-radius: 16px;
+  display: flex;
+  box-shadow: 0px 2px 6px #13124211;
+  align-items: center;
+}
+
+.choice-item-label {
+  font-size: 0.8rem;
+  margin-left: 0.8rem;
+  font-weight: 500;
+}
+
+.choice-item-icon {
+  height: 66px;
+  width: 66px;
+}
+
+.traditional-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #ffffff;
+  /* Replace with actual color code from your design */
+}
+
+.header-logo {
+  height: 2rem;
+}
+
+.header-button {
+  padding: 10px 20px;
+  background-color: var(--primary-1);
+  /* Replace with primary color from your design */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Add more styles as needed */
+}
+
+/* Footer.css */
+.footer {
+  padding: 40px 30px;
+  background-color: var(--neutral-100);
+  /* Replace with neutral color from your design */
+  color: var(--neutral-600);
+  /* Replace with text color from your design */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  border-top: solid var(--neutral-300) 0.1rem;
+}
+
+.footer-subheading {
+  margin: 0.5rem 0 0 0;
+}
+
+.footer-logo {
+  height: 1.6rem;
+}
+
+/* PaginationBar.css */
+.pagination-bar {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--neutral-300);
+  color: var(--neutral-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.line {
+  flex-grow: 1;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: var(--neutral-300);
+  margin-right: 1rem;
+}
+
+.active {
+  background-color: var(--primary-1);
+  color: var(--neutral-100);
+}
+
+.half-active {
+  background: linear-gradient(to right,
+      var(--primary-1) 50%,
+      var(--neutral-300) 50%);
+}
+
+.main-body-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-body-headline {
+  font-size: 1.6rem;
+  color: var(--neutral-800);
+}
+
+.main-body-subheading {
+  font-size: 1rem;
+  max-width: 30rem;
+  text-align: center;
+  color: var(--neutral-600);
+  margin: 0 0 1rem 0;
+}
+
+.form-container {
+  min-width: 32rem;
+  height: 26rem;
+  padding: 2rem;
+  border: solid var(--neutral-300) 0.05rem;
+  border-radius: 56px;
+  margin: 1rem;
+  box-shadow: 0px 2px 6px #13124211;
+}
+
+.form-pagination-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: solid var(--neutral-300) 0.1rem;
+}
+
+.form-pagination-controller {
+  width: 36rem;
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.form-body-container {
+  padding: 2rem 0;
+}
+
+.step-heading {
+  font-size: 1.2rem;
+  color: var(--neutral-800);
+  margin: 0;
+}
+
+.step-subheading {
+  font-size: 0.8rem;
+  max-width: 30rem;
+  color: var(--neutral-600);
+  margin: 0.5rem 0 1rem 0;
+}
+
+.step-center-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CSS */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-gap: 30px;
+  /* This sets the space between items */
+  max-width: 100%;
+  /* Adjust the max width as needed */
+  margin: auto;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* 100% of the viewport height */
+}
+
+.margin-fix-right {
+  margin-right: auto;
+}
+
+.margin-fix-left {
+  margin-left: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    min-width: auto;
+    height: 44rem;
+    width: auto;
+  }
+
+  .form-pagination-container {
+    max-width: 80%;
+  }
+
+  .form-pagination-controller {
+    max-width: 80%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+    grid-gap: 30px;
+    /* This sets the space between items */
+    max-width: 100%;
+    /* Adjust the max width as needed */
+    margin: auto;
+  }
+}
